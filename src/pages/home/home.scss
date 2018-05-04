@@ -1,3 +1,105 @@
 page-home {
+  //  text-align-last: left;
+    /*
+    #Char-Input 
+    {
+        width: 50%; 
+       // height: 50%;
+        margin: 1%;
+        text-align: left;
+        float: left;
+        background-color:red;
+       // overflow: hidden;
+    }*/
+    
+#navbar
+{
+    text-align: left;
+    border: black;
+   // max-width:25% ;
+    -webkit-text-fill-color:  rgb(167, 17, 17);
+}
 
+#btn
+{
+    padding: 7%;
+    margin: 7%;
+    -webkit-text-fill-color:  rgb(214, 242, 248);
+}
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+/*ion-page.home{
+    background-image: url('../../img/images.jpg');
+}
+
+ion-page.home > ion-content{
+  background-color: transparent;
+}*.
+
+/*
+button{
+    padding: 2%;
+    margin: 1.5%;
+}
+
+#Stats
+{
+ /*   height: 100%;
+    width: 50%;
+   position: relative;
+   text-align: center;
+   float: right;
+   margin: 1%*/
+   /*
+   float: right;
+   width: 50%;
+   padding:1%;
+   height: 333px;
+   background-color: black
+}
+
+
+#Col1
+{
+    float: right;
+    text-align: center;
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    background-color: papayawhip;
+    margin: auto;
+}    
+
+#Col2
+{
+    width:100%;
+    height: 70%;
+    float: right;
+    margin: auto;
+    position: fixed;
+    //overflow: hidden;
+}   
+
+#Col3
+{
+    width: 100%;
+    height: 70%;
+    float:left;
+    position: relative;
+    margin: auto;
+}   
+#row1
+{
+
+}*/  
 }

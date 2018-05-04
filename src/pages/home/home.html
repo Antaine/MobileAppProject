@@ -1,17 +1,99 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+<ion-header id = "header1">
+  <ion-navbar id = "navbar" color="themeCol">
+    <ion-title>D&D</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content  padding>
+  <h2>D&D Character Companion App</h2>
+<p>This app will help you find all the information you will need to create a character in Dungeons and Dragons</p>
+
+ <!-- <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type = "text"[(ngModel)]="Name" name ="Name"></ion-input>
+    </ion-item>-->
+    <h3>Races</h3>
+    <ion-grid>
+<ion-row margin = 5% >
+  <ion-col><button ion-button round id ="btn" color="btnCol" (click)="openDragonborn()">Dragonborn</button></ion-col>
+  <ion-col><button ion-button round id ="btn" color="btnCol" (click)="openDwarf()">Dwarf</button></ion-col>
+  <ion-col><button ion-button round id ="btn" color="btnCol" (click)="openElf()">Elf</button></ion-col>
+</ion-row>
+
+<ion-row  margin = 5%>
+    <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openGnome()" >Gnome</button></ion-col>
+    <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openHalfElf()">Half-Elf</button></ion-col>
+    <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openHalfling()" >Halfling</button></ion-col>
+  </ion-row>
+
+  <ion-row  margin = 5%>
+      <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openHalfOrc()"  >Half-Orc</button></ion-col>
+      <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openHuman()" >Human</button></ion-col>
+      <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openTiefling()" >Tiefling</button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+<ion-grid>
+    <h3>Classes</h3>
+    <ion-row  margin = 5%>
+        <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Barbarian')">Barbarian</button></ion-col>
+        <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Bard')">Bard</button></ion-col>
+        <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Cleric')">Cleric</button></ion-col>
+        <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Druid')">Druid</button></ion-col>
+      </ion-row>
+
+      <ion-row  margin = 5%>
+          <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Fighter')">Fighter</button></ion-col>
+          <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Monk')">Monk</button></ion-col>
+          <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Paladin')">Paladin</button></ion-col>
+          <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Ranger')">Ranger</button></ion-col>
+        </ion-row>
+
+        <ion-row  margin = 5%>
+            <ion-col border = 2%><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Fighter')">Roguer</button></ion-col>
+            <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Sorcerer')" >Sorcerer</button></ion-col>
+            <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Warlock')">Warlock</button></ion-col>
+            <ion-col><button ion-button round id ="btn" color="btnCol"(click)="openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/Wizard')">Wizard</button></ion-col>
+          </ion-row>
+    </ion-grid>
+    <button ion-button (click) = "openWithSystemBrowser('http://engl393-dnd5th.wikia.com/wiki/D%26D_5E_Adventure_League_Playable_Races')">Open with System browser</button>
+    <button ion-button (click) = "openWithInAppBrowser('http://engl393-dnd5th.wikia.com/wiki/D%26D_5E_Adventure_League_Playable_Races')">Open with In App browser</button>
+    <button ion-button (click) = "openWithCordovaBrowser('http://engl393-dnd5th.wikia.com/wiki/D%26D_5E_Adventure_League_Playable_Races')">Open with Cordova browser</button>
+   
+  <!--  
+    <ion-label class = "select">Race</ion-label>
+    <ion-select class="select">[(ngModel)]
+        <ion-option value ="Dr">Dragonborn</ion-option>
+        <ion-option value ="Dw">Dwarves</ion-option>
+        <ion-option value ="E">Elf</ion-option>
+        <ion-option value ="G">Gnome</ion-option>
+        <ion-option value ="He">Half-Elf</ion-option>
+        <ion-option value ="Ha">Halfling</ion-option>
+        <ion-option value ="Ho">Half-Orc</ion-option>
+        <ion-option value ="H">Human</ion-option>
+        <ion-option value ="T">Tiefling</ion-option>
+    </ion-select> -->
+<!--
+<ion-item>
+  <ion-label>Allignment</ion-label>
+  <ion-select>[(ngModel)]
+      <ion-option value ="LG">Lawful Good</ion-option>
+      <ion-option value ="NG">Neutral Good</ion-option>
+      <ion-option value ="CG">Chaotic Good</ion-option>
+      <ion-option value ="LN">Lawful Neutral</ion-option>
+      <ion-option value ="N">Neutal</ion-option>
+      <ion-option value ="CN">Chaotic Neutral</ion-option>
+      <ion-option value ="LE">Lawful Evil</ion-option>
+      <ion-option value ="NE">Neutal Evil</ion-option>
+      <ion-option value ="CE">Chaotic Evil</ion-option>
+    </ion-select>
+  </ion-item>
+<div id = "Stats">
+<h5>Strength: <button>+</button><button>-</button></h5> 
+<h5>Dexterity: <button>+</button><button>-</button></h5> 
+<h5>Constitution: <button>+</button><button>-</button></h5> 
+<h5>Intelligence: <button>+</button><button>-</button></h5> 
+<h5>Wisdom: <button>+</button><button>-</button></h5> 
+<h5>Charisma: <button>+</button><button>-</button></h5> 
+</div>-->
 </ion-content>

@@ -1,11 +1,131 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Selection
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+ <ion-list-header>
+   Races
+ </ion-list-header>
+ 
+<ion-list radio-group [(ngModel)]="races1">
 
-</ion-content>
+ <ion-item>
+    <ion-label>Dragonborn</ion-label>
+    <ion-radio value = "Dragonborn"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Dwarf</ion-label>
+    <ion-radio value = "Dwarf"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Elf</ion-label>
+    <ion-radio value = "Elf"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Gnome</ion-label>
+    <ion-radio value = "Gnome"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Half-Elf</ion-label>
+    <ion-radio value = "Half-Elf"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Halflng</ion-label>
+    <ion-radio value = "Halflng"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Half-Orc</ion-label>
+    <ion-radio value = "Half-Orc"></ion-radio>
+ </ion-item>
+
+ <ion-item>
+    <ion-label>Human</ion-label>
+    <ion-radio value = "Human"></ion-radio>
+ </ion-item>
+     
+ <ion-item>
+    <ion-label>Tiefling</ion-label>
+    <ion-radio value = "Tiefling"></ion-radio>
+ </ion-item>
+</ion-list>
+
+
+<ion-list-header>
+  <br>
+    Classes
+  </ion-list-header>
+<ion-list radio-group [(ngModel)]="Classes1">
+
+    <ion-item>
+       <ion-label>Barbarian</ion-label>
+       <ion-radio value = "Barbarian"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Bard</ion-label>
+       <ion-radio value = "Bard"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Cleric</ion-label>
+       <ion-radio value = "Cleric"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Druid</ion-label>
+       <ion-radio value = "Druid"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Fighter</ion-label>
+       <ion-radio value = "Figter"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Monk</ion-label>
+       <ion-radio value = "Monk"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Paladin</ion-label>
+       <ion-radio value = "Paladin"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Ranger</ion-label>
+       <ion-radio value = "Ranger"></ion-radio>
+    </ion-item>
+        
+    <ion-item>
+       <ion-label>Rogue</ion-label>
+       <ion-radio value = "Rogue"></ion-radio>
+    </ion-item>
+    <ion-item>
+       <ion-label>Sorcerer</ion-label>
+       <ion-radio value = "Sorcerer"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Warlock</ion-label>
+       <ion-radio value = "Warlock"></ion-radio>
+    </ion-item>
+   
+    <ion-item>
+       <ion-label>Wizard</ion-label>
+       <ion-radio value = "Wizard"></ion-radio>
+    </ion-item>
+   
+   </ion-list>
+   <button ion-button (click)="outputStorage1()">Confirm</button>
+   </ion-content>
+
