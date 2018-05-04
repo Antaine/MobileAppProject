@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { OpenWeatherMapModule } from 'ionic-openweathermap';
+
 
 /**
  * Generated class for the ResourcesPage page.
@@ -22,4 +24,10 @@ export class ResourcesPage {
     console.log('ionViewDidLoad ResourcesPage');
   }
 
+  options = {
+    apikey: "",
+    city: {"name":["Granada"]},
+    unitFormat: "metric",
+    lang: "en"
+  }
 }

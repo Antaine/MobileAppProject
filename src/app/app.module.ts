@@ -23,6 +23,7 @@ import { HumanPage } from '../pages/human/human';
 import { TieflingPage } from '../pages/tiefling/tiefling';
 import { ResourcesPage } from '../pages/resources/resources';
 import{IonicStorageModule} from '@ionic/storage';
+import { OpenWeatherMapModule } from 'ionic-openweathermap';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import{IonicStorageModule} from '@ionic/storage';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    OpenWeatherMapModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
